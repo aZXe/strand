@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="strand.exe"/>
+    <OBJFILES value="strand.obj Main.obj about.obj ChildGridWin.obj GridArray.obj 
+      OdnomAnaliz.obj MyStatFunctions.obj MatrixFunctions.obj Progress.obj 
+      Distributions.obj Graphing.obj MatMath.obj CalcMFunctions.obj 
+      ChildCalcMemoWin.obj ChildLogWin.obj Logging.obj Optimization.obj 
+      CalcFunctions.obj Config.obj ChildRegrMemoWin.obj Addparm.obj Treeparm.obj 
+      Utils.obj"/>
+    <RESFILES value="strand.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Main.dfm about.dfm ChildGridWin.dfm Graphing.dfm 
+      ChildCalcMemoWin.dfm ChildLogWin.dfm Config.dfm ChildRegrMemoWin.dfm 
+      Addparm.dfm Treeparm.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="bcbsmp50.lib DCLUSR50.lib"/>
+    <SPARELIBS value="vcl50.lib DCLUSR50.lib vclx50.lib bcbsmp50.lib"/>
+    <PACKAGES value="vcl50.bpi vclx50.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;_RTLDLL;_VIS_NOLIB;USEPACKAGES"/>
+    <MAINSOURCE value="strand.cpp"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder5\Projects\&quot;;&quot;c:\Program Files\Borland\CBuilder4\Projects\&quot;;&quot;c:\Program Files\Borland\Borland Shared\Images\Buttons\&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="&quot;C:\Program Files\Borland\CBuilder5\Projects\&quot;;&quot;c:\Program Files\Borland\CBuilder4\Projects\&quot;;&quot;c:\Program Files\Borland\Borland Shared\Images\Buttons\&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par -w-8027 -w-8026"/>
+    <WARNOPTSTR value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;C:\Program Files\Borland\CBuilder5\Projects\.&quot; 
+      -I&quot;c:\Program Files\Borland\CBuilder4\Projects\.&quot; 
+      -I&quot;c:\Program Files\Borland\Borland Shared\Images\Buttons\.&quot; 
+      -I$(BCB)\include -I$(BCB)\include\vcl -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-vGc -vGt -vGd -Od -H=c:\PROGRA~1\BORLAND\CBUILD~1\lib\vcl50.csm -Hc -Vx 
+      -Ve -X- -r- -a8 -5 -b- -k -y -v -vi- -c -tW"/>
+    <PFLAGS value="-$YD -$W -$O- -v -JPHN -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -GD -s -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj $(PACKAGES) Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="cg32.lib $(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib stadev.lib 
+      libmx.lib libmatlb.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=0
+MinorVer=2
+Release=7
+Build=152
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=0.2.7.152
+InternalName=
+LegalCopyright=Стрибук П. Н., Осипенко А. Н.
+LegalTrademarks=
+OriginalFilename=
+ProductName=Noname
+ProductVersion=1.0.0.0
+Comments=No comments!
+
+[HistoryLists\hlIncludePath]
+Count=7
+Item0=C:\Program Files\Borland\CBuilder5\Projects\;c:\Program Files\Borland\CBuilder4\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\include;$(BCB)\include\vcl
+Item1=C:\Program Files\Borland\CBuilder5\Projects;c:\Program Files\Borland\CBuilder4\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\include;$(BCB)\include\vcl
+Item2=c:\Program Files\Borland\CBuilder4\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\include;$(BCB)\include\vcl
+Item3=c:\Program Files\Borland\CBuilder4\Projects;c:\Program Files\Borland\Borland Shared\Images\Buttons;$(BCB)\include;$(BCB)\include\vcl
+Item4=c:\Program Files\Borland\Borland Shared\Images\Buttons;$(BCB)\include;$(BCB)\include\vcl
+Item5=$(BCB)\include;$(BCB)\include\vcl
+Item6=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=7
+Item0=C:\Program Files\Borland\CBuilder5\Projects\;c:\Program Files\Borland\CBuilder4\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item1=C:\Program Files\Borland\CBuilder5\Projects;c:\Program Files\Borland\CBuilder4\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item2=c:\Program Files\Borland\CBuilder4\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item3=c:\Program Files\Borland\CBuilder4\Projects;c:\Program Files\Borland\Borland Shared\Images\Buttons;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item4=c:\Program Files\Borland\Borland Shared\Images\Buttons;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item5=$(BCB)\Projects\Lib;$(BCB)\agl\units;$(BCB)\lib\obj;$(BCB)\lib
+Item6=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=1
+LinkCGLIB=1
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

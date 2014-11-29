@@ -1,0 +1,47 @@
+//AnsiString PathWork;  // рабочий каталог
+AnsiString PathData;  // каталог данных
+AnsiString PathExe;   // каталог запуска
+
+int numStrObj;      // количество объектов
+StrObj *uStrObj;    // массив объектов
+int numStrParm;     // количество признаков
+StrParm *uStrParm;  // массив признаков
+int numStrLink;     // количество связей
+StrLink *uStrLink;  // массив связей
+
+int numFunc;           // количество функций близости
+struct sFuncNear {
+  char nameFunc[256];  // наименование функции близости
+  char txtNear[256];   // текст функции близости
+  char txtWght[256];   // текст весовой функции
+} *FuncNear;
+
+int numKod, numValue, numTime;  // номера выбранных полей в списке
+                                // для создания нового признака
+
+char s_exp[4];      // расширение файла исходных данных
+
+int numTree;                  // количество деревьев
+AnsiString nameTree[NUMTREE]; // имена деревьев
+AnsiString NameTree;          // название дерева на экране
+
+AnsiString namFact[NUMFCTNAM];    // имена фактор-признаков
+int nFact;                        // количество фактор-признаков
+int nnFact;                       // номер фактор-признака
+int TablTree[TABLINDI][TABLINDJ]; // табличная форма дерева
+int IndI;                         // свободный индекс i
+int IndJ;                         // свободный индекс j
+struct sTablParm {
+  int nObj;                       // номер объекта
+  int nParm;                      // номер параметра
+  int nTabl;                      // индекс j в таблице
+} TablParm[NUMPARM];
+int nTablParm;                    // количество признаков в таблице
+struct sTablFact {
+  int nFact;                      // номер в массиве фактор-признаков
+  int nTablI;                     // индекс i в таблице
+  int nTablJ;                     // индекс j в таблице
+} TablFact[NUMFACT];
+int nTablFact;                    // количество фактор-признаков в таблице
+
+int numVar;                       // количество переменных в модели

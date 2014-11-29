@@ -1,0 +1,14 @@
+struct StrObj {
+  AnsiString nameObj;
+  int numObj;
+};
+struct StrParm {
+  AnsiString nameParm;
+  int numObjParm;
+  int numParm;
+};
+struct StrLink {
+  int numBegLink;
+  int numEndLink;
+};
+

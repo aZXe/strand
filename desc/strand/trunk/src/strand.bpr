@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.05.03"/>
+    <PROJECT value="strand.exe"/>
+    <OBJFILES value="obj\ThisProgramInGSU.obj obj\strand.obj obj\Main.obj obj\about.obj 
+      obj\ChildGridWin.obj obj\GridArray.obj obj\OdnomAnaliz.obj 
+      obj\MatrixFunctions.obj obj\Progress.obj obj\Distributions.obj 
+      obj\Graphing.obj obj\CalcMFunctions.obj obj\ChildCalcMemoWin.obj 
+      obj\ChildLogWin.obj obj\Logging.obj obj\Optimization.obj 
+      obj\CalcFunctions.obj obj\Config.obj obj\ChildRegrMemoWin.obj 
+      obj\Addparm.obj obj\Treeparm.obj obj\Utils.obj obj\MyStatFunctions.obj 
+      obj\TreeConstructor.obj obj\CorrelationGridUnit.obj obj\Sets.obj 
+      obj\Maps.obj obj\Block.obj obj\Connector.obj obj\Element.obj obj\Romb.obj 
+      obj\ElementPropertyU.obj obj\Container.obj obj\TreeContainer.obj 
+      obj\RombIndicator.obj obj\BlockIndicator.obj obj\VarDescriptionSta.obj 
+      obj\VarDescriptionCalc.obj obj\VarDescriptionSimple.obj obj\FPSave.obj 
+      obj\FPConstructor.obj obj\FPContainer.obj"/>
+    <RESFILES value="strand.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Main.dfm about.dfm ChildGridWin.dfm Graphing.dfm 
+      ChildCalcMemoWin.dfm ChildLogWin.dfm Config.dfm ChildRegrMemoWin.dfm 
+      Addparm.dfm Treeparm.dfm TreeConstructor.dfm 
+      ..\Diagram\ElementPropertyU.dfm FPSave.dfm FPConstructor.dfm"/>
+    <LIBFILES value="libmx.lib libmatlb.lib libmatlbmx.lib libmatpb55.lib libmmfile.lib 
+      libmat.lib STADEV.LIB BugslayerUtil.lib"/>
+    <LIBRARIES value="vclx50.lib vcl50.lib"/>
+    <SPARELIBS value="vcl50.lib vclx50.lib"/>
+    <PACKAGES value="vcl50.bpi vclx50.bpi VCLBDE50.bpi TEEUI50.bpi TEEDB50.bpi TEE50.bpi 
+      VCLDB50.bpi ibsmp50.bpi bcbsmp50.bpi bcb97axserver50.bpi bcbie50.bpi 
+      DSS50.bpi VCLIE50.bpi INETDB50.bpi INET50.bpi WEBMID50.bpi VCLMID50.bpi 
+      dclocx50.bpi VCLIB50.bpi NMFAST50.bpi QRPT50.bpi TEEQR50.bpi vclado50.bpi"/>
+    <PATHCPP value=".;..\Diagram"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="BORLAND;IBMPC;MSWIND;PORTABLE_BUGSLAYERUTIL"/>
+    <SYSDEFINES value="NO_STRICT;_VIS_NOLIB;_RTLDLL"/>
+    <MAINSOURCE value="strand.cpp"/>
+    <INCLUDEPATH value="..\Diagram;&quot;C:\Program Files\Borland\CBuilder5\Projects\&quot;;&quot;c:\Program Files\Borland\Borland Shared\Images\Buttons\&quot;;$(BCB)\include;$(BCB)\include\vcl;MatMath;BugslayerUtil\Include"/>
+    <LIBPATH value="..\Diagram;$(BCB)\lib\release;&quot;C:\Program Files\Borland\CBuilder5\Projects\&quot;;&quot;c:\Program Files\Borland\Borland Shared\Images\Buttons\&quot;;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par -w-8027 -w-8026"/>
+    <WARNOPTSTR value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\Diagram -I&quot;C:\Program Files\Borland\CBuilder5\Projects\.&quot; 
+      -I&quot;c:\Program Files\Borland\Borland Shared\Images\Buttons\.&quot; 
+      -I$(BCB)\include -I$(BCB)\include\vcl -IMatMath -IBugslayerUtil\Include 
+      -src_suffix cpp -DBORLAND -DIBMPC -DMSWIND -DPORTABLE_BUGSLAYERUTIL -boa"/>
+    <CFLAG1 value="-O2 -H=c:\PROGRA~1\BORLAND\CBUILD~1\lib\vcl50.csm -Hc -Q -Vx -Ve -X- -a8 
+      -5 -b- -k- -vi -c -tW"/>
+    <PFLAGS value="-N2obj -N0obj -$Y- -$L- -$D- -v -JPHN -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-Iobj -D&quot;&quot; -GC&quot;(c) Pavel Stribuk&quot; -aa -Tpe -GD -x"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib stadev.lib libmx.lib 
+      libmatlb.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=0
+MinorVer=2
+Release=7
+Build=155
+Debug=1
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1049
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=Gomel State University named after Francysk Skaryna
+FileDescription=
+FileVersion=0.2.7.155
+InternalName=
+LegalCopyright=Alexander Osipenko, Natalia Osipenko, Mikhail Vasenda, Pavel Stribuk
+LegalTrademarks=
+OriginalFilename=
+ProductName=СТРАНД (СТатистический Регрессионный АНализ Данных)
+ProductVersion=1.0
+Comments=alpha
+
+[Excluded Packages]
+$(BCB)\Bin\dcl31w50.bpl=Delphi 1.0 Compatibility Components
+$(BCB)\Bin\dclite50.bpl=Borland Integrated Translation Environment
+$(BCB)\Bin\dcldss50.bpl=Borland Decision Cube Components
+
+[HistoryLists\hlIncludePath]
+Count=13
+Item0=..\Diagram;C:\Program Files\Borland\CBuilder5\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\include;$(BCB)\include\vcl;MatMath;BugslayerUtil\Include
+Item1=C:\Program Files\Borland\CBuilder5\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\include;$(BCB)\include\vcl;MatMath;BugslayerUtil\Include
+Item2=C:\Program Files\Borland\CBuilder5\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\include;$(BCB)\include\vcl;MatMath
+Item3=C:\Program Files\Borland\CBuilder5\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\include;$(BCB)\include\vcl;D:\Stribuk\_BCB\Strand5\MatMath
+Item4=C:\Program Files\Borland\CBuilder5\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\include;$(BCB)\include\vcl;\MatMath\
+Item5=C:\Program Files\Borland\CBuilder5\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\include;$(BCB)\include\vcl
+Item6=C:\Program Files\Borland\CBuilder5\Projects\;c:\Program Files\Borland\CBuilder4\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\include;$(BCB)\include\vcl
+Item7=C:\Program Files\Borland\CBuilder5\Projects;c:\Program Files\Borland\CBuilder4\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\include;$(BCB)\include\vcl
+Item8=c:\Program Files\Borland\CBuilder4\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\include;$(BCB)\include\vcl
+Item9=c:\Program Files\Borland\CBuilder4\Projects;c:\Program Files\Borland\Borland Shared\Images\Buttons;$(BCB)\include;$(BCB)\include\vcl
+Item10=c:\Program Files\Borland\Borland Shared\Images\Buttons;$(BCB)\include;$(BCB)\include\vcl
+Item11=$(BCB)\include;$(BCB)\include\vcl
+Item12=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=11
+Item0=..\Diagram;$(BCB)\lib\release;C:\Program Files\Borland\CBuilder5\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item1=$(BCB)\lib\release;C:\Program Files\Borland\CBuilder5\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item2=C:\Program Files\Borland\CBuilder5\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item3=C:\Program Files\Borland\CBuilder5\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;
+Item4=C:\Program Files\Borland\CBuilder5\Projects\;c:\Program Files\Borland\CBuilder4\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item5=C:\Program Files\Borland\CBuilder5\Projects;c:\Program Files\Borland\CBuilder4\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item6=c:\Program Files\Borland\CBuilder4\Projects\;c:\Program Files\Borland\Borland Shared\Images\Buttons\;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item7=c:\Program Files\Borland\CBuilder4\Projects;c:\Program Files\Borland\Borland Shared\Images\Buttons;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item8=c:\Program Files\Borland\Borland Shared\Images\Buttons;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item9=$(BCB)\Projects\Lib;$(BCB)\agl\units;$(BCB)\lib\obj;$(BCB)\lib
+Item10=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=6
+Item0=BORLAND;IBMPC;MSWIND;PORTABLE_BUGSLAYERUTIL
+Item1=BORLAND;IBMPC;MSWIND;PORTABLE_BUGSLAYERUTIL;_DEBUG
+Item2=BORLAND;IBMPC;MSWIND;_DEBUG;PORTABLE_BUGSLAYERUTIL
+Item3=BORLAND;IBMPC;MSWIND;_DEBUG
+Item4=BORLAND;IBMPC;MSWIND
+Item5=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=2
+Item0=obj
+Item1=.\obj
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>

@@ -1,0 +1,6 @@
+REGEDIT4
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.dia\OpenWithList]
+"MRUList"="a"
+"a"="StrDiagram.exe"
+

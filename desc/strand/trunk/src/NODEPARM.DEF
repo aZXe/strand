@@ -1,0 +1,7 @@
+class NodeParm : public TObject {
+  public:
+  NodeParm() : TObject() {}
+  char type;               // тип узла (0 - ЦС, 1 - +, 2 - *, 3 - ^)
+  int numObj;              // номер объекта
+};
+

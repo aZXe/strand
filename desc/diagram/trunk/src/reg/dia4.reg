@@ -1,0 +1,9 @@
+REGEDIT4
+
+[HKEY_USERS\S-1-5-21-1085031214-688789844-1708537768-500\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.dia]
+"Application"="StrDiagram.exe"
+
+[HKEY_USERS\S-1-5-21-1085031214-688789844-1708537768-500\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.dia\OpenWithList]
+"MRUList"="a"
+"a"="StrDiagram.exe"
+

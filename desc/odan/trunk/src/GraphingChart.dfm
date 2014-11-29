@@ -1,0 +1,77 @@
+object Graph: TGraph
+  Left = 207
+  Top = 173
+  HorzScrollBar.Visible = False
+  VertScrollBar.Visible = False
+  AutoScroll = False
+  ClientHeight = 361
+  ClientWidth = 500
+  Color = clBtnFace
+  Constraints.MinHeight = 100
+  Constraints.MinWidth = 100
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Chart1: TChart
+    Left = 0
+    Top = 0
+    Width = 500
+    Height = 361
+    AnimatedZoom = True
+    BackWall.Brush.Color = clWhite
+    BackWall.Brush.Style = bsClear
+    Title.Font.Charset = RUSSIAN_CHARSET
+    Title.Font.Color = clBlack
+    Title.Font.Height = -11
+    Title.Font.Name = 'Arial'
+    Title.Font.Style = []
+    BottomAxis.LabelsFont.Charset = RUSSIAN_CHARSET
+    BottomAxis.LabelsFont.Color = clBlack
+    BottomAxis.LabelsFont.Height = -11
+    BottomAxis.LabelsFont.Name = 'Arial'
+    BottomAxis.LabelsFont.Style = []
+    BottomAxis.LabelStyle = talValue
+    BottomAxis.RoundFirstLabel = False
+    LeftAxis.LabelsFont.Charset = RUSSIAN_CHARSET
+    LeftAxis.LabelsFont.Color = clBlack
+    LeftAxis.LabelsFont.Height = -11
+    LeftAxis.LabelsFont.Name = 'Arial'
+    LeftAxis.LabelsFont.Style = []
+    LeftAxis.LabelStyle = talValue
+    LeftAxis.RoundFirstLabel = False
+    Legend.Visible = False
+    RightAxis.Visible = False
+    TopAxis.Visible = False
+    View3D = False
+    Align = alClient
+    Color = clWhite
+    TabOrder = 1
+  end
+  object btnSave: TButton
+    Left = 0
+    Top = 0
+    Width = 49
+    Height = 17
+    Caption = '&Save'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -9
+    Font.Name = 'Arial'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    TabStop = False
+    OnClick = btnSaveClick
+  end
+  object SaveDialog: TSaveDialog
+    DefaultExt = 'bmp'
+    Filter = 'Windows metafiles|*.wmf|All files|*.*'
+    Left = 424
+    Top = 24
+  end
+end

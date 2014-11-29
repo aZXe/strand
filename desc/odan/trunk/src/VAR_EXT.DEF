@@ -1,0 +1,49 @@
+extern AnsiString PathWork;  // рабочий каталог
+extern AnsiString PathData;  // каталог данных
+extern AnsiString PathStat;  // каталог STATISTICA
+
+extern int numStrObj;      // количество объектов
+extern StrObj *uStrObj;    // массив объектов
+extern int numStrParm;     // количество признаков
+extern StrParm *uStrParm;  // массив признаков
+extern int numStrLink;     // количество связей
+extern StrLink *uStrLink;  // массив связей
+
+extern int numFunc;         // количество функций близости
+extern struct sFuncNear {
+  char nameFunc[256];       // наименование функции близости
+  char txtNear[256];        // текст функции близости
+  char txtWght[256];        // текст весовой функции
+} *FuncNear;
+
+extern int numKod, numValue, numTime;  // номера выбранных полей в списке
+                                       // для создания нового признака
+
+extern char s_exp[4];  // расширение файла исходных данных
+
+extern int numTree;                  // количество деревьев
+extern AnsiString nameTree[NUMTREE]; // имена деревьев
+extern AnsiString NameTree;          // имя дерева на экране
+
+extern AnsiString namFact[NUMFCTNAM];   // имена фактор-признаков
+extern int nFact;                       // количество фактор-признаков
+extern int nnFact;                      // номер фактор-признака
+extern int TablTree[TABLINDI][TABLINDJ];// табличная форма дерева
+extern int IndI;                        // свободный индекс i
+extern int IndJ;                        // свободный индекс j
+extern struct sTablParm {
+  int nObj;                             // номер объекта
+  int nParm;                            // номер параметра
+  int nTabl;                            // индекс j в таблице
+} TablParm[NUMPARM];                    // количество признаков в таблице
+extern int nTablParm;
+extern struct sTablFact {
+  int nFact;                            // номер в массиве фактор-признаков
+  int nTablI;                           // индекс i в таблице
+  int nTablJ;                           // индекс j в таблице
+} TablFact[NUMFACT];
+extern int nTablFact;             // количество фактор-признаков в таблице
+
+extern int numVar;                // количество переменных в модели
+extern char CondCod[5][3];        // коды условий
+

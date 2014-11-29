@@ -1,0 +1,3 @@
+{TODO -oAll : Сделать сохранение файлов .desc}{TODO -oAll : Сделать загрузку файлов .desc}{TODO -oAll : Сделать импорт (создание файла .desc)}{TODO -oOptimization.cpp : Добавить в полной мере вектор опций в оптимизацию}{TODO -oAll : Заменить Graphing на GraphingChart}{TODO -oLogging.cpp :
+Сделать автоматический переход к концу лога
+при изменении размеров окна лога}{TODO -oAll : Прикрутить исправленный одномерный анализ}{TODO -oAll : Добавить изменненный progressbar}{TODO -oOptimization.cpp : Изменить алгоритм оптимизации}

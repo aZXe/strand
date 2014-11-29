@@ -1,0 +1,14 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\StrDiagram.exe]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\StrDiagram.exe\shell]
+"FriendlyCache"="Редактор диаграмм"
+"FriendlyCacheCTime"=hex:00,34,9c,7c,fe,36,c2,01
+@="open"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\StrDiagram.exe\shell\open]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Applications\StrDiagram.exe\shell\open\command]
+@="C:\\WINNT\\StrDiagram.exe \"%1\""
+

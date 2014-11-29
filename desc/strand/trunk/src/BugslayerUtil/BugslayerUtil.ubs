@@ -1,0 +1,48 @@
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+; UBSMaker created Universal Build System configuration file.
+; File     : D:\Dev\Book\CD\SourceCode\BugslayerUtil\BugslayerUtil.ubs
+; Date     : 07/31/1999
+;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[Project]
+Type = DLL
+Proj = BugslayerUtil
+IncludeDir = ..\Include;
+
+[Defines]
+= _DEBUG
+
+[Macros]
+PCH_NAME = PCH
+CL_DEFS = $(CL_DEFS) /DBUILDING_BUGSUTILITY_DLL /DWORK_AROUND_SRCLINE_BUG
+LINK_OPTS = $(LINK_OPTS) /BASE:"0x3000000"
+USERLIBS = DBGHELP.LIB
+DEF_FILE = $(PROJ).def
+
+[Macros - _DEBUG]
+OUTDIR = ..\Output
+
+[Macros - _RELEASE]
+OUTDIR = ..\Release
+
+[Files]
+= GetLoadedModules.cpp
+= NT4ProcessInfo.cpp
+= BugslayerUtil.rc
+= TLHELPProcessInfo.cpp
+= HookImportedFunctionByName.cpp
+= MemDumperValidator.cpp
+= CrashHandler.cpp
+= BSUFunctions.cpp
+= AllocAndFillProcessModuleList.cpp
+= DiagAssert.cpp
+= IsNT.cpp
+= HookOrdinalExport.cpp
+
+[Skip Headers]
+= MemDumperValidator.h
+= MSJDBG.h
+= WarningsOff.h
+= WarningsOn.h
+= PSAPI.H
+
